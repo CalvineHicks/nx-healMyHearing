@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "projects": {
+    "hmh-frontend": {
+      "root": "apps/hmh-frontend",
+      "sourceRoot": "apps/hmh-frontend/src",
+      "projectType": "application",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/web:build",
+          "options": {
+            "outputPath": "dist/apps/hmh-frontend",
+            "index": "apps/hmh-frontend/src/index.html",
+            "main": "apps/hmh-frontend/src/main.tsx",
+            "polyfills": "apps/hmh-frontend/src/polyfills.ts",
+            "tsConfig": "apps/hmh-frontend/tsconfig.app.json",
+            "assets": [
+              "apps/hmh-frontend/src/favicon.ico",
+              "apps/hmh-frontend/src/assets"
+            ],
+            "styles": ["apps/hmh-frontend/src/styles.scss"],
+            "scripts": [],
+            "webpackConfig": "@nrwl/react/plugins/webpack"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/hmh-frontend/src/environments/environment.ts",
+                  "with": "apps/hmh-frontend/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/web:dev-server",
+          "options": {
+            "buildTarget": "hmh-frontend:build"
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "hmh-frontend:build:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/hmh-frontend/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/hmh-frontend/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "hmh-frontend-e2e": {
+      "root": "apps/hmh-frontend-e2e",
+      "sourceRoot": "apps/hmh-frontend-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/hmh-frontend-e2e/cypress.json",
+            "tsConfig": "apps/hmh-frontend-e2e/tsconfig.e2e.json",
+            "devServerTarget": "hmh-frontend:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "hmh-frontend:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/hmh-frontend-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/react"
+  },
+  "schematics": {
+    "@nrwl/react": {
+      "application": {
+        "style": "scss",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": {
+        "style": "scss"
+      },
+      "library": {
+        "style": "scss",
+        "linter": "eslint"
+      }
+    }
+  },
+  "defaultProject": "hmh-frontend"
+}
