@@ -8,6 +8,8 @@ import {
   Link
 } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
+import SchedulingFeature from 'libs/scheduling-feature/src';
+import HomeFeature from 'libs/home-feature/src';
 export const App = () => {
   //TODO: add logo to header
   return (
@@ -39,30 +41,19 @@ export const App = () => {
             <div className='body'>
               <Switch>
                 <Route path='/scheduling'>
-                  <Row>This is the SCHEDULING Page</Row>
-                  <Row>What is on this page:</Row>
-                  <Row>Calendar View, Scheduling Link</Row>
-                  <Row>What I need from Abu:</Row>
-                  <Row>
-                    <ul>
-                      <li>review calendly monthly fees/features</li>
-                      <li>set up g-calendar</li>
-                      <li>buy calendly subscription</li>
-                      <li>send login creds for both via email</li>
-                    </ul>
-                  </Row>                
+                  <SchedulingFeature/>
                 </Route>
                 <Route path='/contact'>
-                  <Row>This is the CONTACT US page</Row>
-                  <Row>What is on this page:</Row>
-                  <Row>Map View, Scheduling Link, Address, Phone Number, Hours</Row>
-                  <Row>What I need from Abu:</Row>
+                  <h1>Contact Us</h1>
                   <Row>
-                    <ul>
-                      <li>address</li>
-                      <li>phone number</li>
-                      <li>business hours</li>
-                    </ul>
+                    <Col>Map View</Col>                  
+                    <Col>
+                      <ul>
+                        <li>1600 laredo st, aurora co 80011</li>
+                        <li>303-847-8572</li>
+                        <li>9 - 5 Weekdays</li>
+                      </ul>
+                    </Col>
                   </Row>
                 </Route>
                 <Route path='/services'>
@@ -78,18 +69,7 @@ export const App = () => {
                   </Row>
                 </Route>
                 <Route path='/'>
-                  <Row>This is the HOME Page</Row>
-                  <Row>What is on this page:</Row>
-                  <Row>Welcome message, Audiology info, summary of services, big scheduling link</Row>
-                  <Row>What I need from Abu:</Row>
-                  <Row>
-                    <ul>
-                      <li>welcome message for page</li>
-                      <li>tbd</li>
-                      <li>tbd</li>
-                      <li>tdb</li>
-                    </ul>
-                  </Row>                           
+                  <HomeFeature/>
                 </Route>
               </Switch>
             </div>

@@ -1,0 +1,33 @@
+@import "mixins";
+.home {
+    .banner {
+        margin: 0 0 rem(16px) 0;
+        &-background {
+            background: linear-gradient(to right, #031A6B , white);
+            height: rem(300px);
+            width: 100%;
+            margin-left: rem(-100px);
+            margin-right: rem(-100px);
+        }
+        &-text {
+            display: flex;
+            margin-top: rem(50px);
+            margin-left: rem(50px);
+            flex-direction: column;
+            color: white;
+            &-1 {
+                font-size: rem(64px);
+            }
+            &-2 {
+                font-size: rem(50px);
+                margin-left: rem(54px);
+            }
+        }
+    }
+
+    .provider {
+        background: tan;
+        height: rem(400px);
+        padding: rem(15px);
+    }
+}

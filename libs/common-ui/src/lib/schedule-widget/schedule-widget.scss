@@ -1,0 +1,23 @@
+@import "mixins";
+.scheduling-container {
+    background: gray;
+    width: rem(350px);
+    margin: auto;
+    padding: 1px;
+
+    .schedule {
+        display: flex;
+        flex-direction: column;
+        margin-top: rem(10px);
+        color: darkblue;
+        box-shadow: 7px 7px 18px -8px rgba(0,0,0,0.75);
+        &-icon {
+            width: 100% !important;
+        }
+        &-text {
+            font-size: rem(40px);
+            margin: auto;
+            margin-top: rem(10px);
+        }
+    }
+}

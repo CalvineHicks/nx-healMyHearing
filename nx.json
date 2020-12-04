@@ -29,6 +29,15 @@
     "hmh-frontend-e2e": {
       "tags": [],
       "implicitDependencies": ["hmh-frontend"]
+    },
+    "scheduling-feature": {
+      "tags": []
+    },
+    "home-feature": {
+      "tags": []
+    },
+    "common-ui": {
+      "tags": []
     }
   }
 }
