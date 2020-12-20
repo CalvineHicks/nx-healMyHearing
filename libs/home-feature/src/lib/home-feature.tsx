@@ -16,6 +16,9 @@ export const HomeFeature: React.FC<HomeFeatureProps> = (props: HomeFeatureProps)
           <div className='banner-text'>
              <span className="banner-text-1">Heal Your Hearing</span> 
              <span className="banner-text-2">Audiology & Hearing Aids</span>
+             <img src="assets/hearing-aid-1.png" alt="hearing aid picture" height='50px' width='50px'></img>
+             <img src="assets/hearing-aid-2.png" alt="hearing aid picture" height='50px' width='50px'></img>
+             <img src="assets/hearing-aid-3.png" alt="hearing aid picture" height='50px' width='50px'></img>
           </div>
         </div>
       </Row>

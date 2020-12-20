@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './calendly.scss';
 
@@ -15,7 +15,7 @@ export const Calendly = (props: CalendlyProps) => {
   return (
     <div>
       <div id="schedule_form">
-        <div 
+       <div 
           className="calendly-inline-widget"
           data-url="https://calendly.com/calvinehicks/15min"
           style={{ minWidth: '320px', height: '580px' }} />

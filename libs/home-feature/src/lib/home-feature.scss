@@ -5,9 +5,10 @@
         &-background {
             background: linear-gradient(to right, #031A6B , white);
             height: rem(300px);
-            width: 100%;
+            width: 120%;
             margin-left: rem(-100px);
             margin-right: rem(-100px);
+            z-index: -1;
         }
         &-text {
             display: flex;
