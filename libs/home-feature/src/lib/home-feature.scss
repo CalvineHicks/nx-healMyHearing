@@ -4,7 +4,7 @@
         margin: 0 0 rem(16px) 0;
         &-background {
             background: linear-gradient(to right, #031A6B , white);
-            height: rem(300px);
+            height: rem(225px);
             width: 120%;
             margin-left: rem(-100px);
             margin-right: rem(-100px);
@@ -12,8 +12,8 @@
         }
         &-text {
             display: flex;
-            margin-top: rem(50px);
-            margin-left: rem(50px);
+            margin-top: rem(24px);
+            margin-left: rem(120px);
             flex-direction: column;
             color: white;
             &-1 {
@@ -21,14 +21,16 @@
             }
             &-2 {
                 font-size: rem(50px);
-                margin-left: rem(54px);
+                margin-left: rem(40px);
             }
         }
     }
 
     .provider {
-        background: tan;
+        background: #ebf1f6;
         height: rem(400px);
         padding: rem(15px);
+        white-space: pre-wrap;
+        box-shadow: 7px 7px 18px -8px rgba(0,0,0,0.75);
     }
 }

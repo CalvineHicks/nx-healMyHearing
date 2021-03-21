@@ -18,7 +18,7 @@ export const Calendly = (props: CalendlyProps) => {
        <div 
           className="calendly-inline-widget"
           data-url="https://calendly.com/calvinehicks/15min"
-          style={{ minWidth: '320px', height: '580px' }} />
+          style={{ minWidth: '320px', height: '900px'}} />
       </div>
   </div>
   );

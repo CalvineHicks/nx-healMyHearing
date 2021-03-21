@@ -1,6 +1,6 @@
 @import "mixins";
 .scheduling-container {
-    background: gray;
+    background: #ebf1f6;
     width: rem(350px);
     margin: auto;
     padding: 1px;
@@ -8,10 +8,10 @@
     .schedule {
         display: flex;
         flex-direction: column;
-        margin-top: rem(10px);
         color: darkblue;
         box-shadow: 7px 7px 18px -8px rgba(0,0,0,0.75);
         &-icon {
+            margin-top: 15px;
             width: 100% !important;
         }
         &-text {

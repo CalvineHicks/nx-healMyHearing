@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="151px" height="34px" viewBox="0 0 151 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(-2.000000, -4.000000)">
+            <text id="Heal" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="36" font-weight="400" fill="#FFFFFF">
+                <tspan x="0.15" y="35">Heal</tspan>
+            </text>
+            <text id="Your" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="14" font-weight="400" fill="#FFFFFF">
+                <tspan x="73.475" y="35">Your</tspan>
+            </text>
+            <text id="Hearing" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="14" font-weight="400" fill="#FFFFFF">
+                <tspan x="103.342" y="35">Hearing</tspan>
+            </text>
+            <path d="M74.5,22 L103,22" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+            <path d="M104,22 L108,6" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+            <path d="M108,6 L112,19" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+            <path d="M112.025449,19.1946444 C118.392802,27.2321994 119.21433,12.2997731 125.682675,12.2010695 C129.946325,12.1360084 132.019252,19.045995 135.96489,20.89247 C141.623184,23.5404315 143.175259,12.0930387 152.682241,14.214946" id="Path-2" stroke="#FFFFFF" stroke-width="2"></path>
+        </g>
+    </g>
+</svg>

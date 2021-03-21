@@ -20,7 +20,10 @@
         "libs/scheduling-feature/src/index.ts"
       ],
       "@nx-heal-my-hearing/home-feature": ["libs/home-feature/src/index.ts"],
-      "@nx-heal-my-hearing/common-ui": ["libs/common-ui/src/index.ts"]
+      "@nx-heal-my-hearing/common-ui": ["libs/common-ui/src/index.ts"],
+      "@nx-heal-my-hearing/contact-us-feature": [
+        "libs/contact-us-feature/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

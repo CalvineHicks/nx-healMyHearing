@@ -1,4 +1,17 @@
 .scheduling-feature {
+    .row {
+        margin: 0;
+    }
+
+    h1 {
+        margin-top: 26px
+    }
+    .scheduling-info {
+        margin-top: 10px;
+    }
+    .calender {
+        margin-top: -56px;
+    }
     .calendly-inline-widget {
         min-width:320px;
         height:630px;

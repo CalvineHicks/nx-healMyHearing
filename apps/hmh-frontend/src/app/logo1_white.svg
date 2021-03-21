@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="151px" height="29px" viewBox="0 0 151 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-2.000000, -9.000000)">
+            <text id="Heal" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="36" font-weight="400" fill="#FFFFFF">
+                <tspan x="0.15" y="35">Heal</tspan>
+            </text>
+            <text id="Your" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="14" font-weight="400" fill="#FFFFFF">
+                <tspan x="73.475" y="35">Your</tspan>
+            </text>
+            <text id="Hearing" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="14" font-weight="400" fill="#FFFFFF">
+                <tspan x="103.342" y="35">Hearing</tspan>
+            </text>
+            <path d="M74.5,23 L152,23" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>

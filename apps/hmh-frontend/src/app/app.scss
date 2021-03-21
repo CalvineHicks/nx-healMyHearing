@@ -13,7 +13,14 @@
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
     .header-link {
       margin-top: auto;
-      margin-bottom: auto;
+      text-align: center;
+      font-size: 24px;
+      a {
+        color: white;
+      }
+      &.logo {
+        text-align: left;
+      }
     }
 
   }
