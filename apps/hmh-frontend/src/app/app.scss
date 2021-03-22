@@ -1,3 +1,4 @@
+
 .app {
   font-family: sans-serif;
   margin-top: 0px;
@@ -6,17 +7,25 @@
     background-color: #143055;
     color: white;
     padding: 5px;
-    border-radius: 3px;
-
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
     .header-link {
       margin-top: auto;
-      margin-bottom: auto;
+      text-align: center;
+      font-size: 24px;
+      a {
+        color: white;
+      }
+      &.logo {
+        text-align: left;
+      }
     }
 
   }
 
   .body {
-    margin-top: 45px;
-    margin-left: 45px;
+    white-space: pre;
   }
 }

@@ -19,6 +19,9 @@
               "apps/hmh-frontend/src/favicon.ico",
               "apps/hmh-frontend/src/assets"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["apps/hmh-frontend/src/styles"]
+            },
             "styles": ["apps/hmh-frontend/src/styles.scss"],
             "scripts": [],
             "webpackConfig": "@nrwl/react/plugins/webpack"
@@ -96,6 +99,90 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["apps/hmh-frontend-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "scheduling-feature": {
+      "root": "libs/scheduling-feature",
+      "sourceRoot": "libs/scheduling-feature/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/scheduling-feature/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/scheduling-feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "home-feature": {
+      "root": "libs/home-feature",
+      "sourceRoot": "libs/home-feature/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lxt": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/home-feature/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/home-feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "common-ui": {
+      "root": "libs/common-ui",
+      "sourceRoot": "libs/common-ui/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/common-ui/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common-ui/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "contact-us-feature": {
+      "root": "libs/contact-us-feature",
+      "sourceRoot": "libs/contact-us-feature/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/contact-us-feature/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/contact-us-feature/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }
