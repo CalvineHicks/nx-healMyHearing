@@ -25,15 +25,6 @@ export const SchedulingFeature = (props: SchedulingFeatureProps) => {
           <Calendly/>
         </Col>
       </Row>
-      <Row>What I need from Abu:</Row>
-      <Row>
-        <ul>
-          <li>review calendly monthly fees/features</li>
-          <li>set up g-calendar</li>
-          <li>buy calendly subscription</li>
-          <li>send login creds for both via email</li>
-        </ul>
-      </Row> 
     </Container>
   );
 };

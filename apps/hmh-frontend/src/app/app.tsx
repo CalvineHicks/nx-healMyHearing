@@ -59,6 +59,8 @@ export const App = () => {
                 </Route>
                 <Route path='/'>
                   <HomeFeature/>
+                  <SchedulingFeature/>
+                  <ContactUsFeature/>
                 </Route>
               </Switch>
             </div>
