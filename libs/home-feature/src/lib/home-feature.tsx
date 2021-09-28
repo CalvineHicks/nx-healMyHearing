@@ -30,15 +30,6 @@ export const HomeFeature: React.FC<HomeFeatureProps> = (props: HomeFeatureProps)
           <div className="provider">Heal Your Hearing/Audiologicus is founded by Mohammad Ismail Tahir, a trained Otolaryngologist (ENT Physician) from Pakistan with over 35 years of International experience. He has been caring for individuals of all ages with ENT conditions with special interest in Ear diseases including Hearing Loss. He understands the impact of hearing loss on quality of life, which affects not only the one who with it but also the loved ones who take part in Caring such individual. He assisted Dr Anthony P Cheng MD an Otolaryngologist at Swedish Medical Center in caring for Hearing impaired individuals, Dr Mohammad Asghar, Aud an Audiologist, at Thornhill Hearing and Balance Center Canada, and Volunteered at Audiology Department VA Medical Center Denver, a sign of love and passion he has developed to help the Hearing-impaired people. He is member of international Hearing and Balance Academy(HBA), Audiology online, International Hearing Society, has a newborn Hearing screening certificate from Utah State University, and License to Dispense Hearing Aids by State of Colorado.</div>
         </Col>
       </Row>
-      <Row>
-        <Col>
-          <ServicesNav/>     
-        </Col>
-        <Col>
-          <div>device card list from map</div>
-          <DeviceCard/>
-        </Col>
-      </Row>
     </Container>
     </>
   );

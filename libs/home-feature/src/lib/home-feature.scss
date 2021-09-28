@@ -1,5 +1,8 @@
 @import "mixins";
 .home {
+
+    margin-bottom: rem(70px);
+
     .banner {
         margin: 0 0 rem(16px) 0;
         &-background {
